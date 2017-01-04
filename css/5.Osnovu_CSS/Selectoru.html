@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Селекторы</title>
+    <style>
+        /*Класи для селекторів*/
+        div{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            margin: 10px;
+        }
+        /*Класи для клсів*/
+        .redBlock{
+            background-color: red;
+        }
+        .blueBlock{
+            background-color: blue;
+        }
+        /*Стилі для Ідентифікаторів*/
+        .divIden{
+            margin: 10px;
+        }
+        #header{
+            height: 80px;
+            background-color: #cccccc;
+        }
+        #content{
+            height: 180px;
+            background-color: #eeeeee;
+        }
+        #footer{
+            height: 80px;
+            background-color: #cccccc;
+        }
+        /*Стилі для стилизации группи селекторов*/
+        h1, h2, h4{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>Селекторы</h3>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <h3>Класи</h3>
+    <div class="redBlock"></div>
+    <div class="blueBlock"></div>
+    <div class="redBlock"></div>
+
+    <h3>Идентификаторb</h3>
+    <pre>
+        Для идентификации уникальных на веб-станице элементов используются идентификаторы,
+        которые определяются с помощью атрибутов id. Например, на странице может быть головной
+        блок или шапка:
+    </pre>
+    <div class="divIden" id="header">Шарка сайта</div>
+    <div class="divIden" id="content">Основное содержимое</div>
+    <div class="divIden" id="footer">Футер</div>
+
+    <h3>Универсальный селектор</h3>
+    <pre>
+        Кроме селекторов тегов, классов и идентификаторов в css также есть так называемый
+        универсальный селектор, который представляет знак звездочки (*). Он применяет стили
+        ко всем элементам на html-странице:
+        *{
+            background-color: red;
+         }
+    </pre>
+    <h3>Стилизация группы селекторов</h3>
+    <pre>Иногда определенные стили применяются к целому ряду селекторов. Например, мы хотим
+        применить ко всем заголовкам подчеркивание. В этом случае мы можем перечислить селекторы
+        всех элементов через запятую:
+    </pre>
+    <h1>CSS3</h1>
+    <h2>Селекторы</h2>
+    <h4>Группа селекторов</h4>
+    <p>Некоторый текст...</p>
+</body>
+</html>

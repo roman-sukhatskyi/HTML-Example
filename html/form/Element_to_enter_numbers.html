@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Элементы для ввода чисел</title>
+</head>
+<body>
+    <h2>Элементы для ввода чисел</h2>
+    <form>
+        <p>
+            <label for="age">Возраст: </label>
+            <input type="number" step="1" min="1" max="100" value="10" id="age" name="age"/>
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+    <pre>
+        Как и в случае с текстовым полем мы можем здесь прикрепить
+        список datalist с диапазоном возможных значений
+    </pre>
+    <form>
+        <p>
+            <label for="price"> Цена: </label>
+            <input type="number" list="priceList"
+                   step="1000" min="3000" max="100000" value="10000" id="price" name="price"/>
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+    <datalist id="priceList">
+        <option value="15000" />
+        <option value="20000" />
+        <option value="25000" />
+    </datalist>
+    <h2>Ползунок</h2>
+    <pre>
+        Ползунок представляет шкалу, на которой мы можем выбрать одно из значений.
+        Для создания ползунка применяется элемент input с атрибутом type="range".
+        Во многом ползунок похожна простое поле для ввода чисел. Он также имеет
+        атрибуты min, max, step и value
+    </pre>
+    <form>
+        <p>
+            <label for="price">Цена:</label>
+            1<input type="range" step="1" min="0" max="100" value="10" id="price" name="price"/>100
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+</body>
+</html>

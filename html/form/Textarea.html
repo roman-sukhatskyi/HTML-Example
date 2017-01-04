@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Textarea</title>
+</head>
+<body>
+    <h2>Textarea</h2>
+    <form method="get">
+        <p>
+            <label for="comment">Ваш комментарий:</label><br/>
+            <textarea name="comment" id="comment" placeholder="Не более 50 символов" maxlength="50"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Добавить" />
+        </p>
+    </form>
+    <pre>
+        С помощью дополнительных атрибутов cols и rows можно
+        задать соответственно количество столбцов и строк:
+    </pre>
+    <form method="get">
+        <p>
+            <label for="comment">Ваш комментарий:</label><br/>
+                <textarea id="comment" name="comment" placeholder="Написать комментарий"
+                          cols="80" rows="7"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Добавить" />
+        </p>
+    </form>
+</body>
+</html>

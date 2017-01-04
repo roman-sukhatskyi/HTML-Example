@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Селекторы потомков</title>
+    <style>
+        #main p{
+            font-size: 20px;
+        }
+        #footer p{
+            font-size: 14px;
+        }
+        li .redLink{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Селекторы потомков</h2>
+    <div id="main">
+        <p>Перший абзац</p>
+        <p>Другий абзац</p>
+    </div>
+    <div id="footer">
+        <p>Текст футера</p>
+    </div>
+    <h3>Другой пример</h3>
+    <ul>
+        <li>Самсунг: <a class="redLink">Galaxy S7 Edge</a></li>
+        <li>Apple: <a>iPhome SE</a></li>
+        <li>LG: <a class="redLink">LG G5</a></li>
+        <li>Microsoft: <a>Lumia 650</a></li>
+    </ul>
+    <pre>
+        li .redLink{
+            color: red;
+        }
+        Но обратите внимание на пробел: li .redLink. Данный пробел играет большое
+        значение и указывает как раз, что элементы с классом redLink должны быть
+        вложенными по отношению к элементу "li"
+
+        то смысл селектора изменится. Теперь будет подразумеваться, что стиль
+        применяется к элементам "li", которые имеют класс redLink. Например,
+        к следующему элементу:
+    </pre>
+</body>
+</html>

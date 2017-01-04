@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Стилизация списков</title>
+    <style>
+        .decimal{
+            list-style-type: decimal;
+        }
+        ol{
+            list-style-type: lower-roman;
+        }
+
+        ul.outside{
+            list-style-position: outside;
+        }
+        ul.inside{
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+    <h1>Стилизация списков</h1>
+    <pre>
+        CSS предоставляет специальные свойства по стилизации списков. Одним из таких свойств является list-style-type. Оно может принимать следующие значения для нумерованных списков:
+
+            decimal: десятичные числа, отсчет идет от 1
+
+            decimal-leading-zero: десятичные числа, которые предваряются нулем, например, 01, 02, 03, … 98, 99
+
+            lower-roman: строчные латинские цифры, например, i, ii, iii, iv, v
+
+            upper-roman: заглавные латинские цифры, например, I, II, III, IV, V…
+
+            lower-alpha: строчные латинские буквы, например, a, b, c..., z
+
+            upper-alpha: заглавные латинские буквы, например, A, B, C, … Z
+
+Для ненумерованных списков:
+
+    disk: черный диск
+
+    circle: пустой кружочек
+
+    square: черный квадратик
+    </pre>
+    <ol>
+        <li>Элемент 1</li>
+        <li class="decimal">Элемент 2</li>
+        <li>Элемент 3</li>
+        <li>Элемент 4</li>
+    </ol>
+    <ul class="inside">
+        <li>Он стал прислушиваться и услыхал звуки приближающегося топота лошадей и звуки голосов...</li>
+        <li>Он стал прислушиваться и услыхал звуки приближающегося топота лошадей и звуки голосов...</li>
+    </ul>
+</body>
+</html>

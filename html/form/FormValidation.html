@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Валидация форм</title>
+</head>
+<body>
+    <h2>Валидация форм</h2>
+    <form method="get">
+        <p>
+            <label for="login">Логин:</label>
+            <input type="text" required id="login" name="login" />
+        </p>
+        <p>
+            <label for="password">Пароль:</label>
+            <input type="password" required id="password" name="password" />
+        </p>
+        <p>
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+    <h3>Атрибуты max и min</h3>
+    <pre>
+       Для ограничения диапазона вводимых значений применяются атрибуты max и min:
+    </pre>
+    <form method="get">
+        <p>
+            <label for="age">Возраст:</label>
+            <input type="number" min="1" max="100" value="18" id="age" name="age"/>
+        </p>
+        <p>
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+    <h3>Атрибут pattern</h3>
+    <pre>
+        Атрибут pattern задает шаблон, которому должны соответствовать данные.
+        Для определения шаблона используется язык так называемых регулярных выражений.
+        Рассмотрим самые простейшие примеры:
+    </pre>
+    <form method="get">
+        <p>
+            <label for="phone">Телефон:</label>
+            <input type="text" placeholder="+1-234-567-8901"
+                   pattern="\+\d-\d{3}-\d{3}-\d{4}" id="phone" name="phone" />
+        </p>
+        <p>
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+    <h3>Отключение валидации</h3>
+    <pre>
+       Не всегда валидация является желаемой, иногда требуется ее отключить.
+        И в этом случае мы можем использовать либо у элемента формы атрибут <b>novalidate</b>,
+        либо у кнопки отправки атрибут <b>formnovalidate</b>:
+    </pre>
+    <form novalidate method="get">
+        <p>
+            <label for="phone">Телефон:</label>
+            <input type="text" placeholder="+1-234-567-8901"
+                   pattern="\+\d-\d{3}-\d{3}-\d{4}" id="phone" name="phone" />
+        </p>
+        <p>
+            <input type="submit" value="Отправить" formnovalidate />
+        </p>
+    </form>
+</body>
+</html>
